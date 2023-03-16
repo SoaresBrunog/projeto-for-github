@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo/logo-crews.jpeg">
+    <link rel="stylesheet" href="style01.css">
+    <link rel="stylesheet" href="style002.css">
+    <title>Card Acade</title>
+</head>
+<body>
+    <style>
+        .cabecalho {
+            padding: 5px;
+        }
+        .cabecalho-imagem {
+            height: 32px;
+            float: left;
+        }
+        .cabecalho-abb {
+            padding: 20px;
+        }
+        .btn-menu {
+           width: 76px;
+           height: 56px;
+           float: right;
+           text-align: center;
+           color: var(--cor04);
+           border-radius: 56px ;
+           cursor: pointer;
+           background: linear-gradient(to right, #032508, #f8e928);
+       }
+       .menu {
+           display: none;
+           width: 100%;
+           height: 100%;
+           position: fixed;
+           background-color: rgba(0,0,0, .9);
+           top: 0;
+           left: 0;
+       }
+       .btn-close {
+           font-size: 1.5em;
+           color: white;
+           cursor: pointer;
+           float: right;
+           margin: 2% 3% 0 0 ;
+        }
+        .menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.menu li {
+    padding: 1.5%;
+}
+.menu li a {
+    font-size: 2em;
+    color: var(--cor02);
+    padding: 1.5% 3%;
+}
+.menu li a:hover{
+    border: 1px solid var(--cor05);
+}
+    </style>
+    <header class="cabecalho">
+        <button class="btn-menu"> <i class="fa fa-bars fa-lg"></i> </button>
+        <nav class="menu">
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="sexta.html" target="_blank">SEXTA-FEIRA</a></li>
+            </ul>
+        </nav>
+        <img class="cabecalho-imagem" src="img/logo/logo-alfa.jpg" alt="logo">
+        <br>
+        <abbr class="cabecalho-abb" style="color: #ffff;" title="ACADEMIA ALFA FITNES">A A F &#x1F4AA;</abbr>
+    </header>
+    <main class="container servicos">
+        <article class="servico">
+            <div class="inner">
+                <h2>Imagem do exercício</h2>
+                <p><strong>Supino reto barra</strong></p>
+                <img src="img/treinoA/supino-reto-barra.webp" alt="exercício1">
+            </div>
+        </article>
+        <article class="servico">
+            <div class="inner">
+                <h2>Imagem do exercício</h2>
+                <p><strong>Supino inclinado c/ halters</strong></p>
+                <img src="img/treinoA/supinoinclinado-halter.jpg" alt="exercício2">
+            </div>
+        </article>
+        <article class="servico">
+            <div class="inner">
+                <h2>Imagem do exercício</h2>
+                <p><strong>Crucifixo cross</strong></p>
+                <img src="img/treinoA/crucifixo-cross.jpg" alt="exercício3">
+            </div>
+        </article>
+        <article class="servico">
+            <div class="inner">
+                <h2>Imagem do exercício</h2>
+                <p><strong>Supino vertical</strong></p>
+                <img src="img/treinoA/supino-vertical.jpg" alt="exercício4">
+            </div>
+        </article>
+        <article class="servico">
+            <div class="inner">
+                <h2>Imagem do exercício</h2>
+                <p><strong>Elevação lateral/frontal</strong></p>
+                <img src="img/treinoA/elevaçao-lateral.jpg" alt="exercício5">
+            </div>
+        </article>
+        <article class="servico">
+            <div class="inner">
+                <h2>Imagem do exercício</h2>
+                <p><strong>Puxador triânngulo</strong></p>
+                <img src="img/treinoA/puxador-trianngulo.jpg" alt="exercício6">
+            </div>
+        </article>
+        <article class="servico">
+            <div class="inner">
+                <h2>Imagem do exercício</h2>
+                <p><strong>Remada curvada barra</strong></p>
+                <img src="img/treinoA/remada-curvada-supinada.jpg" alt="exercício7">
+                <br>
+                <p> <strong><span>300 Abdominais</span></strong></p>
+            </div>
+        </article>
+        </main>
+        <footer class="container rodape">
+            <p class="copyright">
+                <strong> Copyright @Bruno Soares - Todos os direitos reservados.</strong>
+             </p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script>
+            $(".btn-menu").click (function () {
+                $(".menu").show();
+            });
+            $(".btn-close").click (function () {
+                $(".menu").hide();
+            });
+        </script>
+    </body>
+    </html>

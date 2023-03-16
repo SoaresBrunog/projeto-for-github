@@ -1,0 +1,134 @@
+:root {
+    --cor01: #9bb9f7;
+    --cor02: #e13e18;
+    --cor03: #9ef9f0;
+    --cor04: #032508;
+    --cor05: #f8e928;
+    --cor06: #021975;
+    --cor07: #6c91d7;
+    --cor08: #770b16;
+    --cor09: #5d83f8;
+    --cor010: #3aeb39;
+    --cor011: #dde5d5;
+}
+
+.cabecalho {
+    padding: 5px;
+}
+.cabecalho-imagem {
+    height: 32px;
+    float: left;
+}
+.cabecalho-abb {
+    padding: 20px;
+}
+.btn-menu {
+   width: 76px;
+   height: 56px;
+   float: right;
+   text-align: center;
+   color: var(--cor04);
+   border-radius: 56px ;
+   cursor: pointer;
+   background: linear-gradient(to right, #032508, #f8e928);
+}
+
+.menu {
+   display: none;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   background-color: rgba(0,0,0, .9);
+   top: 0;
+   left: 0;
+}
+
+.btn-close {
+   font-size: 1.5em;
+   color: white;
+   cursor: pointer;
+   float: right;
+   margin: 2% 3% 0 0 ;
+}
+
+.menu ul {
+width: 100%;
+float: left;
+text-align: center;
+}
+
+.menu li {
+padding: 1.5%;
+}
+
+.menu li a {
+font-size: 2em;
+color: var(--cor02);
+padding: 1.5% 3%;
+}
+
+.menu li a:hover{
+border: 1px solid var(--cor05);
+}
+
+body {
+    background: var(--cor04);
+}
+
+.servico {
+    width: 100%;
+    background-color: var(--cor09);
+    text-align: left;
+    border-radius:7px ;
+    margin-bottom: 3%;
+}
+
+
+.servico img {
+    border-radius: 7px 7px 0 0 ;
+    height: 80%;
+    width: 90%;
+    padding-left: 3.5%;
+    
+}
+
+
+.inner {
+    padding: 7%;
+}
+
+.inner a {
+    font-size: 1.5em;
+    color: var(--cor04);
+    font-weight: 700;
+}
+
+.inner a:hover {
+    font-size: 2ren;
+    color: var(--cor011);
+    border: 1px solid var(--cor011);
+    padding:  1.5% 3%;;
+}
+
+.inner h2 {
+    font-size: 1em;
+    text-align: center;
+    color: var(--cor04);
+    margin-top: 1%;
+}
+.inner p {
+    margin-top: 6%;
+    color: var(--cor04);
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.rodape {
+    background: linear-gradient(to right,  #032508, #f8e928);
+}
+
+.copyright {
+    margin: 2%;
+    color: var(--cor011);
+    text-align: center;
+}

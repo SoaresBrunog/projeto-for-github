@@ -1,0 +1,222 @@
+:root {
+    --cor01: #9bb9f7;
+    --cor02: #e13e18;
+    --cor03: #9ef9f0;
+    --cor04: #032508;
+    --cor05: #f8e928;
+    --cor06: #021975;
+    --cor07: #6c91d7;
+    --cor08: #770b16;
+    --cor09: #5d83f8;
+    --cor010: #3aeb39;
+    --cor011: #dde5d5;
+}
+
+body {
+    background: var(--cor04);
+    color: var(--cor04);
+}
+
+.nav {
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: var(--cor07);
+    color: var(--cor041);
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.nav> a {
+    color: var(--cor04);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+}
+
+.nav a:hover {
+    font-size: 2ren;
+    color: var(--cor011);
+    border: 1px solid var(--cor011);
+    padding:  1.5% 3%;;
+}
+
+.container {
+    width: 100%;
+    float: left;
+    padding: 1% 2%;
+    text-align: center;
+}
+
+.logo {
+    width: 56px;
+    height: 56px;
+    float: left;
+    background: url(logo-alfa.jpg) center center/56px no-repeat;
+    font-size: 0;
+}
+
+.logo1 {
+    height: 42px;
+    float: left;
+}
+
+
+.btn-menu {
+    width: 76px;
+    height: 56px;
+    padding-right: 2px;
+    float: right;
+    text-align: center;
+    color: var(--cor011);
+    border-radius: 56px ;
+    cursor: pointer;
+    background: linear-gradient(to right, #032508, #f8e928);
+}
+
+.menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0, .9);
+    top: 0;
+    left: 0;
+}
+
+.btn-close {
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    float: right;
+    margin: 2% 3% 0 0 ;
+}
+
+.menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.menu li {
+    padding: 1.5%;
+}
+.menu li a {
+    font-size: 2em;
+    color: var(--cor02);
+    padding: 1.5% 3%;
+}
+.menu li a:hover{
+    border: 1px solid var(--cor05);
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+main ul, li {
+    list-style: none;
+}
+
+.servico {
+    width: 100%;
+    background-color: var(--cor07);
+    text-align: left;
+    border-radius:7px ;
+    margin-bottom: 3%;
+}
+
+.servico h1 {
+    font-size: 2.5em;
+}
+
+.inner {
+    padding: 2%;
+    
+}
+
+.inner h2 {
+    font-size: 2.2em;
+    color: var(--cor04);
+    margin-top: 2%;
+}
+.inner p {
+    margin-top: 6%;
+    color: 
+    line-height: 1.5em;
+}
+
+.inner ul, li {
+    font-size: 1.3em;
+}
+
+
+/* RODAPÉ */
+.rodape {
+    background: linear-gradient(to right,  #5d83f8, #3aeb39);
+}
+
+.social-icons a {
+    font-size: 1.5em;
+    color: var(--cor05).
+    margin-right:3%;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons a:hover {
+    color: var(--cor011);
+}
+
+.copyright {
+    margin: 2%;
+    color: var(--cor08);
+}
+
+@media screen and (min-width: 480px){
+    .logo {
+        background: url(img/logo/logo-alfa.jpg) center center/52px no-repeat;
+    }
+    .btn { font-size: 2em;}
+}
+
+@media screen and (min-width: 1280px){
+    .btn-menu {display: none;}
+    .btn-close {display: none;}
+
+    .menu {
+        width:  auto; 
+        height: 56px;
+        line-height: 6px;
+        float: right;
+        background-color: var(--cor09);
+        display: block !important;
+        position: static;
+    }
+    
+    .menu li {
+        padding: 0;
+        float: left;
+    }
+
+    .menu li a {
+        color: var(--cor04);
+        font-size: 1em;
+        padding: 15px;
+        transition-duration: 0.5s;
+    }
+
+    .menu li a:hover{
+        border: none;
+        color: var(--cor05);
+        border: 1px solid var(--cor011);
+        padding:  1.5% 3%;;
+    }
+
+    .container {
+        padding: 1%;
+    }
+}
